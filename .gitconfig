@@ -1,7 +1,7 @@
 [user]
-	name = Junhao Jiang
+  name = Junhao Jiang
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [alias]
   st = status
   co = checkout
@@ -12,11 +12,11 @@
   # work @WalmartLabs
   syncmidas = "!f() { echo Syncing with master && git checkout master && git fetch upstream && git rebase -i upstream/master; }; f"
 [diff]
-	tool = diffmerge
+  tool = diffmerge
 [difftool "diffmerge"]
-	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+  cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = diffmerge
+  tool = diffmerge
 [mergetool "diffmerge"]
-	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
-	trustExitCode = true
+  cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+  trustExitCode = true
