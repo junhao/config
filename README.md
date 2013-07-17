@@ -8,6 +8,9 @@ Configuration files across machines
 1. git clone the project into ~/config
 2. Add 'source ~/.bashrc.common' to ~/.bash_profile
 3. run './init.sh'
+4. install YouCompleteMe
+   cd ~/config/.vim/bundle/YouCompleteMe
+   ./install.sh
 
 # To revert what you did
   run './init.sh revert'
