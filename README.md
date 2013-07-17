@@ -16,6 +16,8 @@ Configuration files across machines
 4. install YouCompleteMe
    cd ~/config/.vim/bundle/YouCompleteMe
    ./install.sh
+   git submodule init   (for python support)
+   git submodule update
 
 # To revert what you did
   run './init.sh revert'
