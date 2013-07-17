@@ -17,6 +17,7 @@ set ignorecase
 set incsearch
 set hlsearch
 
+"Add underscore as word separator"
 set iskeyword-=_
 
 if has("gui_running")
@@ -51,9 +52,6 @@ function! CtrlGGrep()
     return
   endif
        
-  "use the previous window to jump to the first search result
-  "wincmd w
-   
   "a hack for *nix to make sure the output of "grep" isnt echoed in vim
   "let old_shellpipe = &shellpipe
   "let &shellpipe='&>'
@@ -83,9 +81,6 @@ else
   colorscheme default
 endif
 
-"if $COLORTERM == 'gnome-terminal'
-"	set term=gnome-256color
-"  colorscheme railscasts
-"else
-"  colorscheme default
-"endif
+"Highlight Lines exceed 80 characters"
+"highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+"match OverLength /\%>79v.\+/

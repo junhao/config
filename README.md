@@ -6,7 +6,12 @@ Configuration files across machines
 
 # How to apply config files
 1. git clone the project into ~/config
-2. Add 'source ~/.bashrc.common' to ~/.bash_profile
+2. Add 'source ~/.bashrc.common' to ~/.bash_profile or ~/.bash_login
+
+   if [ -f ~/.bashrc.common ]; then
+     source ~/.bashrc.common
+   fi
+
 3. run './init.sh'
 4. install YouCompleteMe
    cd ~/config/.vim/bundle/YouCompleteMe
