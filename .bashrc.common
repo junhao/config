@@ -4,6 +4,8 @@ alias ll='ls -alF'
 alias ls='ls -G'
 alias la='ls -A'
 
+alias todo='grep -r "@junhao"'
+
 alias grep='grep -n -I --color --exclude-dir=.git --exclude=*.swp'
 
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
