@@ -44,7 +44,10 @@ if has("gui_running")
   
   "NerdTree"
   Bundle 'scrooloose/nerdtree'
-  map <C-n> :NERDTreeToggle<CR>
+  map <C-t> :NERDTreeToggle<CR>
+
+  "Multiple Cursors"
+  Bundle 'terryma/vim-multiple-cursors'
 
   "vim-jade"
   Bundle 'digitaltoad/vim-jade'
