@@ -6,17 +6,10 @@ Configuration files across machines
 
 # How to apply config files
 1. git clone the project into ~/config
-2. Add 'source ~/.bashrc.common' to ~/.bash_profile or ~/.bash_login
-
-   if [ -f ~/.bashrc.common ]; then
-     source ~/.bashrc.common
-   fi
-
-3. run './init.sh'
-4. install Vundle and other bundles
-   $ git submodule update --init
+2. run './init.sh'
+3. install Vundle and other bundles
    open Gvim and do :BundleInstall
-   YouCompleteMe will probably complain, if so:
+   Note: YouCompleteMe will probably complain, if so:
      $ cd ~/config/.vim/bundle/YouCompleteMe
      $ ./install.sh
 

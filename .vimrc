@@ -49,6 +49,9 @@ if has("gui_running")
   "vim-jade"
   Bundle 'digitaltoad/vim-jade'
 
+  "Solarized"
+  Bundle 'altercation/vim-colors-solarized'
+
   "Folding Settings"
   set foldmethod=indent
   set foldlevel=20
@@ -90,6 +93,9 @@ if has("gui_running")
   autocmd VimEnter * NERDTree
   autocmd VimEnter * wincmd p
   set term=gnome-256color
+  "syntax enable
+  "set background=dark
+  "colorscheme solarized
   colorscheme railscasts
 else
   colorscheme default

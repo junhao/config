@@ -4,8 +4,7 @@ files=( .vim .vimrc .gitconfig .bashrc.common )
 BACKUP_DIR=$HOME/.backup
 if [[ $1 != 'abort' ]]; then
   echo "Update all submodules ..."
-  git submodule init
-  git submodule update
+  git submodule update --init
   mkdir -p $BACKUP_DIR
 fi
 
@@ -27,3 +26,10 @@ do
     fi
   fi
 done
+
+# source .bashrc.common from .bash_profile
+cat >> $HOME/.bash_profile << EOL
+if [ -f ~/.bashrc.common ]; then
+  source ~/.bashrc.common
+fi
+EOL
