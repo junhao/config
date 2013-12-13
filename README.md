@@ -12,7 +12,7 @@ Installation
     ```
 2.  Setup configuration
 
-    ```
+    ```sh
     $ ./init.sh
     ```
 3.  Install Vundle and other bundles
