@@ -68,6 +68,7 @@ if has("gui_running")
   au BufWinEnter * silent! loadview
 
   "This should go after Vundle initialization"
+  filetype on
   filetype plugin indent on
 endif
   
