@@ -21,19 +21,33 @@ set hlsearch
 set iskeyword-=_
 
 if has("gui_running")
-  "Load plugin automatically"
-  execute pathogen#infect()
-  
+  "Vundle required settings"
+  set nocompatible   " be iMproved
+  filetype off       " required!
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+  "let Vundle manage Vundle"
+  Bundle 'gmarik/vundle'
+
+  "YouCompleteMe"
+  Bundle 'Valloric/YouCompleteMe'
+
   "EasyMotion"
+  Bundle 'Lokaltog/vim-easymotion'
   let g:EasyMotion_leader_key = '<Leader>'
   
   "CtrlP plugin"
+  Bundle 'kien/ctrlp.vim'
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
   set wildignore+=*/tmp/*,*.so,*.swp,*.zip
   
   "NerdTree"
+  Bundle 'scrooloose/nerdtree'
   map <C-n> :NERDTreeToggle<CR>
+
+  "vim-jade"
+  Bundle 'digitaltoad/vim-jade'
 
   "Folding Settings"
   set foldmethod=indent

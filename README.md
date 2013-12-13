@@ -13,16 +13,17 @@ Configuration files across machines
    fi
 
 3. run './init.sh'
-4. install YouCompleteMe
-   cd ~/config/.vim/bundle/YouCompleteMe
-   ./install.sh
-   git submodule init   (for python support)
-   git submodule update
+4. install Vundle and other bundles
+   $ git submodule update --init
+   open Gvim and do :BundleInstall
+   YouCompleteMe will probably complain, if so:
+     $ cd ~/config/.vim/bundle/YouCompleteMe
+     $ ./install.sh
 
 # To revert what you did
   run './init.sh revert'
 
 # Changes in the future
 - make all generic changes of bash shell config in .bashrc.common
-- add vim bundles as git submodule
-  (add <git-repository> in .gitmodules)
+- add vim bundles in .vimrc
+  e.g. Bundle 'Valloric/YouCompleteMe'

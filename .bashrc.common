@@ -14,3 +14,6 @@ function renametab {
   export PROMPT_COMMAND=''
   echo -ne "\033]0;"$@"\007"
 }
+
+# workaround for MacVim's issue with YouCompleteMe
+alias gvim='DYLD_FORCE_FLAT_NAMESPACE=1 gvim'
