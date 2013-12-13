@@ -1,22 +1,41 @@
-config
+Config Files
 ======
-
 Configuration files across machines
 (e.g. .vimrc, .vim, .gitconfig, .bashrc.common)
 
-# How to apply config files
-1. git clone the project into ~/config
-2. run './init.sh'
-3. install Vundle and other bundles
-   open Gvim and do :BundleInstall
-   Note: YouCompleteMe will probably complain, if so:
-     $ cd ~/config/.vim/bundle/YouCompleteMe
-     $ ./install.sh
+Installation
+----
+1.  Set up config repo
 
-# To revert what you did
-  run './init.sh revert'
+    ```sh
+    $ git clone https://github.com/junhao/config.git ~/.vim/config
+    ```
+2.  Setup configuration
 
-# Changes in the future
-- make all generic changes of bash shell config in .bashrc.common
-- add vim bundles in .vimrc
-  e.g. Bundle 'Valloric/YouCompleteMe'
+    ```
+    $ ./init.sh
+    ```
+3.  Install Vundle and other bundles
+
+    Launch `vim`, run `:BundleInstall`
+4. If Vundle complains about YouCompleteMe, run the following commands
+
+    ```sh
+    $ cd ~/config/.vim/bundle/YouCompleteMe
+    $ ./install.sh
+    ```
+
+To revert what you did
+----
+```sh
+$ ./init.sh revert
+```
+
+Changes in the future
+----
+- Make all generic changes of bash shell config in .bashrc.common
+
+- Add vim bundles in .vimrc
+
+    e.g. `Bundle 'Valloric/YouCompleteMe'`
+
