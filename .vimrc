@@ -61,6 +61,8 @@ if has("gui_running")
   "Solarized"
   Bundle 'altercation/vim-colors-solarized'
 
+  "Plugins to consider: SnipMate, Ack(better grep), Pep8, Syntastic"
+
   "Folding Settings"
   set foldmethod=indent
   set foldlevel=20
