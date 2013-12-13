@@ -49,6 +49,15 @@ if has("gui_running")
   "vim-jade"
   Bundle 'digitaltoad/vim-jade'
 
+  "vim-mustache"
+  Bundle 'juvenn/mustache.vim'
+
+  "vim-scala"
+  Bundle 'derekwyatt/vim-scala'
+
+  "railscasts"
+  Bundle 'jpo/vim-railscasts-theme'
+
   "Solarized"
   Bundle 'altercation/vim-colors-solarized'
 
@@ -57,6 +66,9 @@ if has("gui_running")
   set foldlevel=20
   au BufWinLeave * silent! mkview
   au BufWinEnter * silent! loadview
+
+  "This should go after Vundle initialization"
+  filetype plugin indent on
 endif
   
 "Ctrl G Grep"
