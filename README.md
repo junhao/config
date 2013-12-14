@@ -8,7 +8,7 @@ Installation
 1.  Set up config repo
 
     ```sh
-    $ git clone https://github.com/junhao/config.git ~/.vim/config
+    $ git clone https://github.com/junhao/config.git ~/config
     ```
 2.  Setup configuration
 
