@@ -50,6 +50,7 @@ if has("gui_running")
   map <c-t> :NERDTreeToggle<CR>
 
   "Multiple Cursors"
+  "use ctrl+n to select current variable"
   Bundle 'terryma/vim-multiple-cursors'
 
   "Syntastic"
@@ -77,7 +78,7 @@ if has("gui_running")
   "Solarized"
   Bundle 'altercation/vim-colors-solarized'
 
-  "Plugins to consider: SnipMate, Ack(better grep), Pep8, Syntastic"
+  "Plugins to consider: SnipMate, Ack(better grep), Pep8"
 
   "Folding Settings"
   set foldmethod=indent
