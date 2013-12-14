@@ -2,7 +2,7 @@
 
 files=( .vim .vimrc .gvimrc .gitconfig .bashrc.common )
 BACKUP_DIR=$HOME/.backup
-if [[ $1 != 'abort' ]]; then
+if [[ $1 != 'revert' ]]; then
   echo "Update all submodules ..."
   git submodule update --init
   mkdir -p $BACKUP_DIR
