@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files=( .vim .vimrc .gitconfig .bashrc.common )
+files=( .vim .vimrc .gvimrc .gitconfig .bashrc.common )
 BACKUP_DIR=$HOME/.backup
 if [[ $1 != 'abort' ]]; then
   echo "Update all submodules ..."

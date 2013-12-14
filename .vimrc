@@ -34,12 +34,15 @@ if has("gui_running")
 
   "EasyMotion"
   Bundle 'Lokaltog/vim-easymotion'
+  "Press \(slash) and 'w' to trigger EasyMotion"
   let g:EasyMotion_leader_key = '<Leader>'
   
   "CtrlP plugin"
   Bundle 'kien/ctrlp.vim'
-  let g:ctrlp_map = '<c-p>'
+  "Use command+t to trigger ctrlp"
+  let g:ctrlp_map = '<D-t>'
   let g:ctrlp_cmd = 'CtrlP'
+  let g:ctrlp_prompt_mappings = { 'AcceptSelection("e")': ['<c-e>'], 'AcceptSelection("t")': ['<CR>'] }
   set wildignore+=*/tmp/*,*.so,*.swp,*.zip
   
   "NerdTree"
