@@ -44,10 +44,20 @@ if has("gui_running")
   
   "NerdTree"
   Bundle 'scrooloose/nerdtree'
-  map <C-t> :NERDTreeToggle<CR>
+  map <c-t> :NERDTreeToggle<CR>
 
   "Multiple Cursors"
   Bundle 'terryma/vim-multiple-cursors'
+
+  "Syntastic"
+  Bundle 'scrooloose/syntastic'
+  let g:syntastic_check_on_open = 1
+  let g:syntastic_error_symbol = '✗'
+  let g:syntastic_warning_symbol = '⚠'
+  let g:syntastic_enable_balloons = 1
+  let g:syntastic_always_populate_loc_list = 1
+  map <c-s> :Errors<CR>
+  map <c-q> :lclose<CR>
 
   "vim-jade"
   Bundle 'digitaltoad/vim-jade'
