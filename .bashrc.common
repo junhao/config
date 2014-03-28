@@ -17,3 +17,16 @@ function renametab {
 
 # workaround for MacVim's issue with YouCompleteMe
 alias gvim='DYLD_FORCE_FLAT_NAMESPACE=1 gvim'
+
+
+# load a couple useful git shell scripts
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+fi
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# Display git branch in bash
+export PS1="\[\e[0;32m\]\h:\W\[\e[0;35m\]\$(__git_ps1)\[\e[0;32m\]\$ "
