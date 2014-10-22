@@ -6,6 +6,7 @@
   st = status
   co = checkout
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ps = submodule foreach git pull origin master
   sync = "!f() { echo Syncing $1 with master && git checkout master && git fetch upstream && git merge upstream/master && git push origin master && git checkout $1 && git rebase -i master; }; f"
   upload = "!f() { echo Merge pull request from $1 && git push upstream $1:master; }; f"
   conflicts = "!git diff --name-only --diff-filter=U"
