@@ -1,5 +1,6 @@
 [user]
-  name = Junhao Jiang
+	name = Junhao Jiang
+	email = junhao.john.jiang@gmail.com
 [credential]
   helper = osxkeychain
 [alias]
@@ -21,3 +22,6 @@
   trustExitCode = true
 [push]
   default = current
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
